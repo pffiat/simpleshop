@@ -14,6 +14,8 @@
  */
 --%>
 
+<%@include file="/WEB-INF/jsp/init.jsp" %>
+
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -21,3 +23,22 @@
 This is the <b>simpleshop</b> portlet.<br />
 
 <c:out escapeXml="true" value="${releaseInfo}" />.
+
+<table class="table">
+      <caption>Optional table caption.</caption>
+      <thead>
+        <tr>
+          <th><liferay-ui:message key="title" /></th>
+          <th><liferay-ui:message key="quantity" /></th>
+          <th><liferay-ui:message key="price" /></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td><aui:input name="quantity" label=""></aui:input></td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+</table>
+    
