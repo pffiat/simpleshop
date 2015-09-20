@@ -1,0 +1,22 @@
+Bonjour {{facurationAddress.name}},
+
+Nous avons bien enregistré votre commande et nous allons la traiter dans les plus brefs délais.
+
+Rappel de la commande passée sur albert-gabrieleff.com :
+
+Adresse d’expédition :
+
+{{receptionAddress.name}}
+{{receptionAddress.complement}}{{receptionAddress.street}}
+{{receptionAddress.postalCode}}{{receptionAddress.city}}
+
+
+Livre(s) commandé(s) :
+
+{{#shippedArcticleBills}}
+titre : {{this.name}} prix : {{this.price}} quantité : {{this.quantity}}
+{{/shippedArcticleBills}}
+
+Avec {{shippingPrice}} € de frais de port.
+
+Si vous avez des questions, vous pouvez appeler au 09 66 98 29 20.

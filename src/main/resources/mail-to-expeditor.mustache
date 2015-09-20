@@ -1,0 +1,16 @@
+Facture numéro {{}} à la date du {{}}
+
+{{facurationAddress.name}}
+{{facurationAddress.complement}}{{facurationAddress.street}}
+{{facurationAddress.postalCode}}{{facurationAddress.city}}
+
+
+Détails de la facture  :
+
+{{#shippedArcticleBills}}
+titre : {{this.name}} 
+prix : {{this.price}}
+quantité : {{this.quantity}}
+{{/shippedArcticleBills}}
+
+pour la somme de {{TTCPrice}} TTC dont  {{HTPrice}} HT (20%).

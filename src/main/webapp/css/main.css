@@ -1,0 +1,22 @@
+.aui .control-group {
+    margin-bottom: 10px;
+}
+
+
+.aui .control-group .longInput {
+	width: 70%;
+}
+
+.aui .saveButton {
+	border: medium none;
+	background: none repeat scroll 0% 0% #6E787F;
+	border-radius: 4px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-right: 10px;
+	padding: 0px 20px;
+	text-align: center;
+	color: #F9F9F9;
+	font-size: 18px;
+}
